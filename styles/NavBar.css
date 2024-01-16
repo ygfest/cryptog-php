@@ -1,0 +1,7 @@
+.brand-text {
+  color: black;
+}
+.brand-text:hover {
+  color: rgb(25,135,84);
+}
+

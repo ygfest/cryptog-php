@@ -1,0 +1,20 @@
+.nav-link {
+  color: black;
+
+}
+
+.nav-link:hover {
+  background-color: rgb(200,200,200);
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.nav-link.active {
+  background-color: green;
+  color: white;
+}
+
+.sidebar-sticky {
+  justify-content: space-evenly;
+  background-color: rgb(231, 233, 235);
+}

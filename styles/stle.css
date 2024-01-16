@@ -1,0 +1,32 @@
+body {
+    padding: 50px;
+    background-image: url("../assets/bg-bg.svg");
+    background-size: cover; /* or contain, depending on your preference */
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: rgba(0, 195, 91, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    opacity: 0.85;
+}
+
+.form-group {
+    margin-bottom: 30px;
+    text-align: center; /* Use text-align instead of align-content */
+}
+
+.btn {
+   border: none;
+}
+.btn:hover {
+    background-color:rgb(0, 176, 112);
+    transition: 0.3s;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+}
