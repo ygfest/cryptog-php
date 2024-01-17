@@ -117,6 +117,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         li {
             text-align: left; /* Align text to the left within list items */
         }
+        .custom-btn-success {
+      background: linear-gradient(to right, #28a745, #218838); /* Adjust the colors as needed */
+      border: none;
+      color: white;
+    }
     </style>
 </head>
 <body>
@@ -187,22 +192,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	</ul> 
 	</p>
 
-
+    <h6 class=""style="text-align: center; font-weight: 600;">Try it yourself</h6>
+        <div class="card" style=" width: 32rem; border: none; margin: auto;">
     <form method="post">
-        <label for="plaintext">Enter Text:</label>
-        <input type="text" name="plaintext" id="plaintext" value="<?= htmlspecialchars($plaintext) ?>" required>
+        <label for="plaintext">Enter Text:</label><br/>
+        <input type="text" name="plaintext" id="plaintext" value="<?= htmlspecialchars($plaintext) ?>" required><br/>
 
-        <label for="key">Enter Key:</label>
-        <input type="text" name="key" id="key" value="<?= htmlspecialchars($key) ?>" required>
+        <label for="key">Enter Key:</label><br/>
+        <input type="text" name="key" id="key" value="<?= htmlspecialchars($key) ?>" required><br/>
 
         <br>
-        <button type="submit">Encrypt / Decrypt</button>
+        <button type="submit" class="btn btn-success custom-btn-success">Encrypt / Decrypt</button>
     </form>
-
     <div class="result">
         <p><strong>Encrypted Text:</strong> <?= htmlspecialchars($ciphertext) ?></p>
         <p><strong>Decrypted Text:</strong> <?= htmlspecialchars($decryptedText) ?></p>
     </div>
+        </div>
+    
 	
 	  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -159,11 +159,11 @@
           </div>
         </div>
 	
-	<p> 
+	<p style="text-align: center;"> 
 	So, the decrypted message is "BUTTERFLY."
 	</p>
 	
-	<p>
+	<p style="text-align: center;">
 	The Vigenère cipher provides a stronger level of security compared to simpler ciphers, but it can still be susceptible 
 	to attacks, especially if the key is short or if certain patterns exist in the plaintext.
 	</p>
@@ -231,17 +231,17 @@
     }
     ?>
   
-
+  <h6 class=""style="text-align: center; font-weight: 600;">Try it yourself</h6>
+    <div class="card" style=" width: 32rem; border: none; margin: auto; text-align: center;">
     <form method="post" action="">
-        <label for="plaintext">Enter Text:</label>
-        <input type="text" id="plaintext" name="plaintext" required>
-        <br>
-        <label for="key">Enter Key:</label>
-        <input type="text" id="key" name="key" required>
-        <br>
-        <button type="submit" name="encrypt">Encrypt</button>
-        <button type="submit" name="decrypt">Decrypt</button>
+        <label for="plaintext">Enter Text:</label><br/>
+        <input type="text" id="plaintext" name="plaintext" required> <br/>
+        <label for="key">Enter Key:</label><br/>
+        <input type="text" id="key" name="key" required><br/>
+        <button type="submit" name="encrypt" class="btn btn-success">Encrypt</button>
+        <button type="submit" name="decrypt" class="btn btn-primary" style="background-color: rgb(42, 42, 44)">Decrypt</button>
     </form>
+    </div>
 
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

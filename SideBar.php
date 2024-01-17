@@ -39,10 +39,10 @@
         <a class="nav-link" href="Polygram.php">Polygram substitution Cipher</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Hill Cipher</a>
+        <a class="nav-link" href="Hill.php">Hill Cipher</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Poly Cipher</a>
+        <a class="nav-link" href="Polyalphabetic.php">Polyalphabetic Cipher</a>
       </li>
         <!-- other links pa -->
       </ul>
